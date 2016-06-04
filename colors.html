@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Colors</title>
+    <style>
+        div {
+            width: 150px;
+            height: 150px;
+        }
+        div#one {
+            background-color: rgb(255,0,0);
+        }
+        div#two {
+            background-color: rgba(255,0,0,0.5);
+        }
+        td {
+            height: 20px;
+            width: 1500px;
+        }
+        tr#R {
+            background-color: rgb(255,0,0);
+        }
+        tr#W {
+            background-color: white;
+        }
+        tr#B {
+            background-color: black;
+            color: white;
+        }
+        tr#Y {
+            background-color: yellow;
+        }
+        tr#L {
+            background-color: lime;
+        }
+        tr#Blue {
+            background-color: blue
+        }
+        tr#A {
+            background-color: aqua;
+        }
+        tr#M {
+            background-color: magenta;
+        }
+    </style>
+</head>
+<body>
+  <table>
+   <tr>
+       <th>HEX</th>
+       <th>RGB</th>
+       <th>NAME</th>
+       <th>HSL</th>
+    </tr>
+
+   <tr id="R">
+       <td></td>
+       <td></td>
+       <td>Red</td>
+       <td>hsl(0,100%,50%)</td>
+   </tr>
+   <tr id="W">
+       <td></td>
+       <td></td>
+       <td>White</td>
+       <td>hsl(360, 100%, 100%)</td>
+   <tr id="B">
+       <td></td>
+       <td></td>
+       <td>Black</td>
+       <td>hsl(0,0,0)</td>
+   </tr>
+   <tr id="Y">
+       <td></td>
+       <td></td>
+       <td>Yellow</td>
+       <td>hsl(60, 100%, 50%)</td>
+   </tr>
+   <tr id="L">
+       <td></td>
+       <td></td>
+       <td>Lime</td>
+       <td>hsl(120, 100%, 50%)</td>
+   </tr>
+   <tr id="Blue">
+       <td></td>
+       <td></td>
+       <td>Blue</td>
+       <td>hsl(240, 100%, 50%)</td>
+   </tr>
+   <tr  id="A">
+       <td></td>
+       <td></td>
+       <td>Aqua</td>
+       <td>hsl(180, 100%, 50%)</td>
+   </tr>
+   <tr id="M">
+       <td></td>
+       <td></td>
+       <td>Magenta</td>
+       <td>hsl(300, 100%, 50%)</td>
+   </tr>
+   </table>
+    <h2>Alpha Channel/Opacity/Transparency</h2>
+    <h3>Use rgba(255,0,0,0.5) function</h3>
+    <div id=one></div>
+    <div id=two></div>
+</body>
+</html>

@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Backgrounds</title>
+    <style>
+        
+        #containercontainer {
+            width: 600px;
+            height: 400px;
+            border: solid tomato;
+            margin-bottom: 2000px;
+            
+            overflow: auto;
+        }
+        
+        
+        #container {
+            width: 1000px;
+            height: 400px;
+            border: solid;
+            
+            background-image: url("/img/StoryOfStuff_logo.jpg");
+            
+/*            background-size: 300px;*/
+            background-size:cover; 
+            background-size: contain;
+            
+            background-attachment: scroll;
+            background-attachment: local;
+        }
+    </style>
+</head>
+<body>
+   <div id="containercontainer">
+   <div id="container"></div></div>
+    
+</body>
+</html>

@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   
+    <meta charset="UTF-8">
+    <title>Document</title>
+    
+    <style>
+        button {
+            width: 60px;
+            height: 20px;
+        }
+        input id="info"{
+            width: 250px
+        }
+        select id="city"{
+            width: 110px;
+            height:20px;
+        }
+        input type="radio" {
+            width: 1px;
+        }
+        select name="prefix" {
+            width: 10px
+        }
+        img {
+            width: 100px
+        }
+    </style>
+    
+</head>
+
+
+<body>
+ 
+  <form action="#" method="get">
+   
+    <fieldset>
+      
+       <legend>
+        My Information
+        </legend>
+        
+        <select name="prefix" id="prefix">
+            <option name="mr" value="Mr.">Mr.</option>
+            <option name="mrs" value="Mrs.">Mrs.</option>
+            <option name="ms" value="Ms.">Ms.</option>
+        </select>
+        <br><br>
+        
+<label for="info">Name:
+         <input id="info" type=text name="name"
+        placeholder="Please enter your name">
+        </label>
+        <br><br>
+<label for="info">Email:
+        <input id="info" type=email name="email"
+        placeholder="Please enter your email">
+        </label>
+        <br><br>
+<label for="info">Phone:
+       <input type="tel" name="info" pattern="(\d-)?\d{3}-?\d{3}-?\d{4}" placeholder="Please enter your phone number">
+       </label>
+       <br><br>
+
+    <label for="city">City:</label>
+    <select name="city" id="city">
+         <option value="0">Please Select</option>
+         <option value="1">Toronto</option>
+         <option value="2">London</option>
+         <option value="3">Kitchener</option>
+         <option value="4">Sarnia</option>
+    </select>
+
+
+    </fieldset>
+    
+    <fieldset>
+       
+        <legend>
+            Order information
+        </legend>
+        <input name="order" type="color">
+         Pizza:<input type="checkbox">
+         Hotdog:<input type="checkbox">
+         
+         Burger:<input type="checkbox">
+         Soup:<input type="checkbox">
+         <br>
+          <label for="">People (1-4):</label>
+           <input name="People" type="range" min="0" max="4">
+   
+        <br><br>
+        
+        Date: <input name="date" type="date"> 
+        <br>
+        Time:<input name="time" type="time">
+        <br><br>
+        
+        <input name="payment" id="1" type="radio" >
+        <label for="1">MasterCard</label>
+        <input name="payment" id="2" type="radio">
+        <label for="2">Visa</label>
+        <input name="payment" id="3" type="radio">
+        <label for="3">PayPal</label>
+        
+    </fieldset>
+    <br>
+    
+    <textarea name="comments" id="comments" cols="79" rows="10" placeholder="Please enter other comments/requests here"></textarea>
+    
+    <br>
+    <input id="button" type="submit">
+    <input id="button" type="reset">
+    </form>
+      
+</body>
+
+</html>
