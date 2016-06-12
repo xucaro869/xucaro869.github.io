@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>margin collapse!!!!!</title>
+    
+    <style>
+    
+        #first {
+            width: 200px;
+            height: 100px;
+            background-color: aqua;
+            margin-bottom: 100px;
+        }
+        #second {
+            width: 200px;
+            height: 100px;
+            background-color: darkcyan;
+            margin-top: 1033px;
+/*            wont move until margintop>100px*/
+        }
+    
+    </style>
+    
+    
+</head>
+<body>
+   
+   <div id="first">First</div>
+   <div id="second">Second</div>
+    
+</body>
+</html>

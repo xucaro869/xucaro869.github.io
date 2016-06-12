@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Banner Page</title>
+    
+    
+    <style>
+        #whole {
+            border: double black;
+            padding-top: 40px;
+            padding-left: 20px;
+            padding-bottom: 70px;
+            padding-right: 20px;
+        }
+        #title {
+            text-align: center;
+            color: tomato;
+        }
+        #separator {
+            width: 100px;
+            background-color: black;
+            height: 2px;
+            border:none;
+        }
+        #subtitle {
+            border: none;
+            padding: none;
+            text-align: center;
+        }
+        span {
+            font-family: fantasy;
+        }
+        
+        #form {
+            text-align: center;
+        }
+        
+        #email {
+            border: solid tomato 2.5px; 
+            padding: 5px;
+            width: 250px;
+            margin-right: 10px;
+        }
+        
+        #button {
+            border: solid purple;
+            width: 100px;
+            padding: 5px;
+            border-radius: 50px;
+            display: inline-block;
+        }
+         #button:active {
+            background:linear-gradient(to right bottom, #29a7ea, #e8fa0a);
+        }
+        #button:hover {
+            cursor: pointer;
+        }
+    
+    </style>
+    
+</head>
+<body>
+    <div id="whole">
+       
+        <h1 id="title">Teens Programming</h1>
+        
+        <hr id="separator">
+        
+        <p id="subtitle">Supporting a well-spent life, a bright career and entrepreneurship <br>Promoting <span>STEM</span> education Science - Technology - Engineering - Math</p>
+        
+        <div id="form">
+        
+        <input type="email" name="email" id="email" placeholder="Enter your email">
+        
+        <div id="button">Submit</div>
+        
+        </div>
+        
+    </div>
+</body>
+</html>
