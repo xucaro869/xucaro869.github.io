@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Responsive</title>
+    
+    <style>
+
+    
+        nav {
+            position: relative;
+            height: 40px;
+            
+        }
+        
+        ul {
+            list-style: none;
+            position: absolute;
+            right: 20px;
+            
+        }
+    
+        a {
+            text-decoration: none;
+        }
+        
+        li {
+            display: inline-block;
+            margin-left: 10px;
+            
+        }
+        
+        section {
+            border: solid;
+            
+        }
+        
+        article {
+            margin-bottom: 20px;
+        }
+        
+        @media screen and (min-width:600px) {
+            nav {
+                float: left;
+            }
+            
+            ul {
+                position: static;
+                
+            }
+            
+            li {
+                display: block;
+                margin-bottom: 20px;
+            }
+            
+            section {
+                float: right;
+                width: 80%;
+                border: none;
+                border-left: double blue;
+                padding-left: 10px;
+            }
+            
+            #main {
+                border: double blue;
+                overflow: auto;
+                
+            }
+        }
+        
+        
+    </style>
+    
+</head>
+<body>
+  
+  <div id="main">
+   <nav>
+    <ul>
+        <li><a href="#">About</a></li>
+        <li><a href="#">Products</a></li>
+        <li><a href="#">Blogs</a></li>
+    </ul>
+   </nav>
+    
+    <section>
+        <article>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Veniam nesciunt facere nulla debitis vel! Molestiae, repudiandae provident dicta fugiat eaque ipsam perferendis! Ipsam, dolorum facilis maxime veritatis nobis reiciendis consectetur.</article>
+        <article>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptatum, suscipit. Dignissimos fugit eum ullam iusto. Minima voluptates obcaecati veniam iste provident. Sit temporibus iure accusantium culpa necessitatibus adipisci neque aliquid.</article>
+        <article>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Commodi vero distinctio eveniet explicabo veniam voluptates, esse ratione, ullam consequuntur optio dolorem architecto libero facere quas veritatis, magnam molestias nam, accusantium!</article>
+    </section></div>
+</body>
+</html>

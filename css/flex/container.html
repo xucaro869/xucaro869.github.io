@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    
+<style>
+    #container {
+        width: 600px;
+        height: 400px;
+        background-color: aqua;
+        display: flex;
+/*
+        flex-direction: row;
+        flex-wrap: wrap;
+*/
+        flex-flow: row wrap;
+        justify-content: flex-start;
+        align-items: center;
+        align-content: flex-end
+    }
+    
+    #container div {
+        background-color: thistle;
+        height: 50px;
+        border: solid 1px;
+        font-size: 40px;
+        width: 181px;
+    }
+</style>
+</head>
+<body>
+    <div id="container">
+        <div id="one">1</div>
+        <div id="two">2</div>
+        <div id="three">3</div>
+        <div id="four">4</div>
+        <div id="five">5</div>
+        <div id="six">6</div>
+    </div>
+</body>
+</html>

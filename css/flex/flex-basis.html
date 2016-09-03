@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <style>
+        #container {
+            width: 400px;
+            height: 300px;
+            border: solid;
+            display: flex;
+        }
+        
+        #item {
+            flex-basis: 0;
+            border: solid;
+        }
+        .item1 {
+            flex-grow: 1;
+        }
+        .item2 {
+            flex-grow: 2;
+        }
+        .item3 {
+            flex-grow: 3;
+        }
+    </style>
+    
+    
+</head>
+<body>
+    <div id="container">
+        <div id="item" class="item1">item</div>
+        <div id="item" class="item2">item</div>
+        <div id="item" class="item3">item</div>
+    </div>
+</body>
+</html>

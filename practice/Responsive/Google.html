@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Google</title>
+
+    <Style>
+        * {
+            padding: 0;
+            margin: 0;
+            box-sizing: border-box;
+            text-decoration: none;
+        }
+        
+        nav {
+            position: relative;
+            height: 40px;
+        }
+        
+        ul {
+            list-style: none;
+            position: absolute;
+            right: 20px
+        }
+        
+        li {
+            display: inline-block;
+        }
+        
+        #main {
+            text-align: center;
+        }
+        
+        #apps {
+            background-image: url('https://ssl.gstatic.com/gb/images/i1_1967ca6a.png');
+            display: inline-block;
+            height: 35px;
+            width: 35px;
+            background-position: -155px -48px;
+            background-repeat: no-repeat;
+            background-size: 600px;
+            text-indent: 9999px;
+        }
+        
+        #notification {
+            background-image: url('https://ssl.gstatic.com/gb/images/i1_1967ca6a.png');
+            display: inline-block;
+            height: 35px;
+            width: 35px;
+            background-color: rgba(0, 0, 0, 0.8);
+            background-position: -448p 0px;
+            background-repeat: no-repeat;
+            background-size: 600px;
+            text-indent: 9999px;
+        }
+        
+        #account {
+            background-image: url('https://lh3.googleusercontent.com/-aa3h5MQfq-E/AAAAAAAAAAI/AAAAAAAAAAA/AOtt-yEdpg4c9Mmt7U00-zw5h0DNKcJCPw/s32-c-mo/photo.jpg');
+            height: 40px;
+            width: 40px;
+            display: inline-block;
+            text-indent: 9999px;
+            border-radius: 40px;
+        }
+        
+        #search {
+            border: solid grey 1px;
+            height: 50px;
+            width: 457px;
+            margin: 0 auto;
+        }
+        
+        #logo {
+            background-image: url(https://www.google.ca/images/branding/googlelogo/1x/googlelogo_color_272x92dp.png);
+            background-repeat: no-repeat;
+            height: 100px;
+            margin-top: 100px;
+            background-size: 100%;
+            width: 275px;
+            margin: 100px auto 0;
+        }
+        
+        #voice {
+            display: inline-block;
+            width: 40px;
+            height: 40px;
+            background-image:url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADAAAAAwCAYAAABXAvmHAAACrElEQVR42u2Xz2sTQRSAX8VSb1K8iNqKooJH2Ux6Ksn+iPQqxZMIehJB0do/IMhmQWsvHr2KSEGk0tSLIoWIYNUKij20F2/N7iaUZnYT0kYzzhMKs0HDJiTdLcwHDwKZSd63781LBiQSSW9JZdkhzfKm1Rz9mjZp/W9YdEU3vXv4HsQZ40FtNG36q5rls//Ej4tmbSS2T15Mvp3ExOPmEMQNbBtMMEyoljcFcQN7PqyAlqNfIG7gYQ0tYNIaxA1MrJPY3wImbUqBKAXSFv0tBSIVMOkvKRDtGKWN/T6FdqRAxFNoWwpEPIXqUqBT6ALU/UVgu8GW4GD3f6f9TRDYNJTDrk7YbtiqUumHwIYoUJuHERDAS0r4CvgFECgbY+cFAR7KT+g1POmCKFDNw6WggHc3fBtVb4CAoyauBgXIG+g1Xh5mRAGah6cggBd11fK/h7lOprIs0H6uRl6KAo5O7kOv4QmPiwJ4Jqqv4FiwCtXjvD2+tRmfK6kZ/ygI2HritK0rDVGgrClJ6DWMwYC/AGuCBMYcIC2V0CzvjmbRz3j3xUjn6CfeYreUJ2wQkGD75INPX1mFfsEFrrcIYCvdhC4paWQakxajpJMr0C9YFg54i7AsClRmh9/xnr0NHcInzZStk2aLwAcGMAD9pPIazvFKVDD5rdnhJeHLX5RTyRPQHpz5o66emMc9wdlPtvA8wF7Aq2BUHh1525qEo5JtR1WeOXpickO9cJIpyuD6xJmhYiZ5ytWSl3mlnuOaf+2zDaLDXmJrSgZ/MYVEugo+gSh+FkSBa4yd5Ul87DZ5XpFl/AyIEjzYjkau8WqshU2cr13HPbgX4gJOD97n465GZlyVvC9mSKloKI2iTnbwNT+gBX54H+IaXAtxJzE3ycSAFqSAFJACUkAikXD+AHj5/wx2o5osAAAAAElFTkSuQmCC');
+            background-size: 32px;
+            background-repeat: no-repeat;
+            vertical-align: bottom;
+        }
+        
+        input {
+            width: 400px;
+            height: 40px;
+            border: none;
+        }
+        
+        .btn {
+            margin-top: 40px;
+            display: inline-block;
+            background-color: lightgrey;
+            width: 150px;
+            height: 40px;
+            color: black;
+            line-height: 40px
+            
+        }
+        
+    </Style>
+
+</head>
+
+<body>
+    <nav>
+        <ul>
+            <li><a href="">Gmail</a></li>
+            <li><a href="">Images</a></li>
+            <li><a href="" id="apps">Apps</a></li>
+            <li><a href="" id="notification">Notifications</a></li>
+            <li><a href="" id="account">Account</a></li>
+        </ul>
+    </nav>
+
+    <div id="main">
+        <div id="logo"></div>
+        <div id="search">
+            <input type="text">
+            <span id="voice"></span>
+        </div>
+        <a href="" class="btn">Google Search</a>
+        <a href="" class="btn">I'm Feeling Lucky</a>
+        <div>Google.ca offered in: <a href="https://www.google.fr/">Français</a></div>
+    </div>
+
+</body>
+
+</html>
+
+

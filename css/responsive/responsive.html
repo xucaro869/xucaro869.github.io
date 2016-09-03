@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    
+    <style>
+        #one, #two {
+            height: 100px;
+            
+        }
+        #one {
+            background-color: limegreen;
+        }
+        #two {
+            background-color: saddlebrown;
+        }
+        
+        @media screen and (min-width: 400px) {
+            #one, #two {
+                display: inline-block;
+                width: 50%;
+            }
+        }
+        
+    </style>
+    
+</head>
+<body>
+    <div id="one"></div>
+    <div id="two"></div>
+</body>
+</html>
