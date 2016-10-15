@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    
+    <style>
+    
+        div {
+/*            display: flex;*/
+        }
+                
+        #name {
+            font-size: 20px;
+            padding-top: 7px;
+        }
+        #menu {
+            padding-top: 10px;
+            font-size: 16px;
+        }
+        
+        #name, #menu {
+            color: white;
+            background-color: tomato;
+/*            flex-basis: 992px;*/
+            
+            padding-left: 10px;
+            padding-bottom: 10px;
+        }
+        #menu {
+/*            flex-basis: 992px;*/
+            text-align: left;
+        }
+        
+        #container {
+            background-color: tomato;
+            width: 100%;
+        }
+        
+        @media screen and (min-width: 992px) {
+            div {
+                display: inline-block;
+                width: 48%;
+            }
+            #menu {
+                text-align: right;
+            }
+
+        }
+
+    </style>
+    
+</head>
+<body>
+    <div id="container">
+        <div id="name">TEENS PROGRAMMING</div>
+        
+        <div id="menu">TECHNOLOGIES COURSES ABOUT CONTACT</div>
+    </div>
+</body>
+</html>

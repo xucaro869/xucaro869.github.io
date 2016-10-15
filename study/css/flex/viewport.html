@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    
+    <style>
+        * {
+            font-size: 18px;
+        }
+        #container {
+            height: 500px;
+            width: 500px;
+        }
+        #header {
+            background-color: rebeccapurple;
+            height: 12%;
+        }
+        #text {
+            background-color: royalblue;
+            height: 52%;
+        }
+        #left {
+            background-color: limegreen;
+            height: 12%;
+        }
+        #right {
+            background-color: orange;
+            height: 12%;
+        }
+        #footer {
+            background-color: orangered;
+            height: 12%;
+        }
+        @media screen and (min-width: 600px) {
+        #container {
+            width: 1000px;
+            height: 380px;
+            display: flex;
+            flex-wrap: wrap;
+        }
+        #header {
+            padding-top: 10px;
+            padding-left: 10px;
+            padding-right: 10px;
+            flex-basis: 100%;
+            height: auto;
+            order: 1;
+        }
+        #text {
+            padding-top: 60px;
+            padding-bottom: 40px;
+            padding-left: 10px;
+            padding-right: 10px;
+            flex-basis: 100%;
+            height: auto;
+            order: 2;
+        }
+        #left {
+            order: 3;
+        }
+        #right {
+            order: 4;
+        }
+        #footer {
+            flex-basis: 100%;
+            padding-top: 10px;
+            padding-left: 10px;
+            padding-right: 10px;
+            height: auto;
+            order: 5;
+        }
+        #left, #right {
+            padding-top: 10px;
+            padding-left: 10px;
+            padding-right: 10px;
+            flex-basis: auto;
+            flex-grow: 1;
+            flex: 1;
+            height: auto;
+        }
+        @media screen and (min-width: 800px) {
+        #text {
+            order: 3;
+            flex-grow: 2;
+        }
+        #left {            
+            order: 2;
+            flex-grow: 1;
+        }
+        #right {
+            flex-grow: 1;
+        }
+        #footer {
+
+        }
+        #left, #right, #text {
+            padding-left: 10px;
+            padding-right: 10px;
+            flex-basis: auto;
+            flex: 1;
+            height: auto;
+        }
+        }
+    
+    </style>
+    
+    
+</head>
+<body>
+    <div id="container">
+        <div id="header">Header</div>
+        <div id="text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Mollitia libero amet, dolores facere veritatis explicabo odit dolore natus soluta velit accusantium aliquam quisquam commodi suscipit voluptatum optio. Perspiciatis, doloribus, voluptate.</div>
+        <div id="left">Aside Left</div>
+        <div id="right">Aside Right</div>
+        <div id="footer">Footer</div>
+    </div>
+</body>
+</html>

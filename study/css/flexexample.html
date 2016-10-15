@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Flex Example</title>
+    
+    <style>
+    
+        #container {
+            height: 300px;
+            width: 250px;
+            border: solid 10px;
+        }
+        header {
+            background-color: chartreuse;
+            height: 10%;
+        }
+        
+        article {
+            background-color: aqua;
+            height: 60%;
+        }
+        
+        nav {
+            background-color: skyblue;
+            height: 10%;
+        }
+        aside {
+            background-color: blueviolet;
+            height: 10%;
+        }
+        
+        footer {
+            background-color: darkblue;
+            height: 10%;
+        }
+        
+        @media screen and (min-width: 401px) {
+            #container {
+                border: solid 60px;
+                width: 800px;
+                height: 480px;
+                
+                display: flex;
+                flex-wrap: wrap;
+            }
+            
+            header, footer {
+                flex-basis: 100%;
+                height: auto;
+            }
+            nav, article, aside {
+                flex-basis: auto;
+                flex-grow: 1;
+                flex: 1;
+                height: auto;
+            }
+            
+            header {
+                order: 1; 
+            }
+            
+            article {
+                order: 3;
+            }
+            
+            nav {
+                order: 2;
+            }
+            
+            aside {
+                order: 4;
+            }
+            
+            footer {
+                order: 5;
+            }
+        }
+    
+    </style>
+    
+</head>
+<body>
+   <div id="container">
+    <header>header</header>
+    <article>article</article>
+    <nav>nav</nav>
+    <aside>aside</aside>
+    <footer>footer</footer>
+   </div>
+    
+</body>
+</html>

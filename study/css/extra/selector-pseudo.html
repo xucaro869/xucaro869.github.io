@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Pseudo</title>
+    
+    <style>
+        * {
+            display: inline-block;
+        }
+        li:first-child {
+            text-transform: uppercase;
+        }
+        li:nth-child(2){
+            border: double;
+        }
+        li:last-child {
+            font-family: fantasy;
+        }
+        ul:before {
+            content:'Boredom is boring';
+            width: 100px;
+            height: 100px;
+            display: inline-block;
+            background-color: tomato;
+            color: white;
+        }
+        
+    </style>
+    
+    
+</head>
+<body>
+    <ul>
+        <li>one</li>
+        <li>two</li>
+        <li>three</li>
+    </ul>
+</body>
+</html>

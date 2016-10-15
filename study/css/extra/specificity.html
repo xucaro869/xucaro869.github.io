@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Specificity</title>
+    
+    <style>
+        #para.para1 {
+            color: lime!important;
+        }
+        #para.para {
+/*            color: black;*/
+        }
+        #para {
+            color: gold;
+        }
+        p {
+            color: blue;
+        }
+        .para {
+            color: red;
+/*            font-family: fantasy;*/
+        }
+    </style>
+    
+</head>
+<body>
+    
+    <p>This is... a paragraph</p>
+    <p class='para'>This is another paragraph</p>
+    <p id='para' class='para'>This is yet another paragraph</p>
+    <p id='para' class='para' style='color: purple'>This is STILL another paragraph</p>
+    <p id='para' class='para para1' style='color: purple'>This is... whatevs you know the drill</p>
+    
+</body>
+</html>
